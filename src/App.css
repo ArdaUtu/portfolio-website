@@ -48,7 +48,7 @@ h1, h2, h3 { font-weight: 800; margin-bottom: 1rem; }
 
 p { color: var(--muted); line-height: 1.6; }
  
-/* ===== NAVBAR ===== */
+/*navbar*/
 
 .navbar {
 
@@ -239,7 +239,7 @@ p { color: var(--muted); line-height: 1.6; }
 
 }
  
-/* ===== PROJECTS ===== */
+/*Projecten*/
 
 .projects-grid {
 
@@ -301,7 +301,7 @@ p { color: var(--muted); line-height: 1.6; }
 
 .skills li { margin: 0.3rem 0; }
  
-/* ===== CONTACT ===== */
+/*contacten*/
 
 .contact-info { margin-top: 1rem; }
 
