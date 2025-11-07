@@ -1,20 +1,23 @@
+import project from '../assets/Project.png';
+import project1 from '../assets/Project1.png';
+import project2 from '../assets/Project2.png';
 export default [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Een website gemaakt met php die databases heeft",
     description: "Een persoonlijke portfolio gebouwd met React.",
-    image: "https://picsum.photos/400/200?random=1",
+    image: project1,
   },
   {
     id: 2,
-    title: "CRUD Applicatie",
+    title: "Escape room spel in Javascript",
     description: "Een PHP CRUD app met database-integratie.",
-    image: "https://picsum.photos/400/200?random=2",
+    image: project,
   },
   {
     id: 3,
-    title: "Rock Paper Scissors Game",
+    title: "Platformer en raket spel in C#",
     description: "Een interactieve game gemaakt met HTML, CSS en JavaScript.",
-    image: "https://picsum.photos/400/200?random=3",
+    image: project2,
   },
 ];

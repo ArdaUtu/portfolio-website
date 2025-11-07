@@ -14,10 +14,10 @@ export default function ProjectDetail() {
  
   return (
 <section className="container section">
-<button className="btn" onClick={() => navigate(-1)}>← Terug</button>
+<button className="btn" onClick={() => navigate(-1)}>Terug</button>
 <h1>{project.title}</h1>
 <img src={project.image} alt={project.title} />
-<p>{project.description}</p>
+<p>{project.description1}</p>
 </section>
 
   );

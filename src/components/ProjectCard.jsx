@@ -8,6 +8,7 @@ export default function ProjectCard({ project }) {
 <div className="card-content">
 <h3>{project.title}</h3>
 <p>{project.description}</p>
+<p>{project.description1}</p>
 </div>
 </div>
   );

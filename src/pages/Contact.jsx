@@ -34,8 +34,8 @@ export default function Contact() {
   };
 
   return (
-    <section className="container section">
-      <h1>Contact</h1>
+    <section className="ContactBody">
+      <h1 class ="h1Contact">Contact</h1>
       <p>Heb je vragen of wil je samenwerken? Stuur me gerust een bericht!</p>
       <div className="contact-info">
         <p><strong>Email:</strong> 9024283@student.zadkine.com</p>
@@ -48,7 +48,7 @@ export default function Contact() {
         <input type="text" name="name" placeholder="Naam" required />
         <input type="email" name="email" placeholder="Email" required />
         <textarea name="message" placeholder="Bericht" rows="5" required></textarea>
-        <button type="submit" className="btn primary">Verstuur</button>
+        <button type="submit" className="btnVerstuur">Verstuur</button>
       </form>
 
       {/* Resultaat Bericht */}

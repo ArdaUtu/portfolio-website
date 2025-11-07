@@ -3,9 +3,10 @@ import projects from "../data/projects";
  
 export default function Projects() {
   return (
-<section className="container section">
-<h1>Mijn Projecten</h1>
-<div className="projects-grid">
+<section className="ProjectBody">
+
+<h1 class ="h1Project">Mijn Projecten</h1>
+<div className="Projects">
         {projects.map((p) => (
 <ProjectCard key={p.id} project={p} />
         ))}

@@ -1,33 +1,36 @@
-import { NavLink } from "react-router-dom";
- 
+import { Link, Outlet } from "react-router-dom";
+
 export default function Navbar() {
   return (
-<nav className="navbar">
-<div className="navbar-container">
-<h2 className="logo">Arda</h2>
-<ul className="nav-links">
-<li>
-<NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+    <>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" h2 className="logoArda">Arda</Link>
+        <ul className="nav-links">
+          <li>
+            <Link to="/">
               Home
-</NavLink>
-</li>
-<li>
-<NavLink to="/over-mij" className={({ isActive }) => (isActive ? "active" : "")}>
+            </Link>
+          </li>
+          <li>
+            <Link to="/over-mij">
               Over mij
-</NavLink>
-</li>
-<li>
-<NavLink to="/projecten" className={({ isActive }) => (isActive ? "active" : "")}>
+            </Link>
+          </li>
+          <li>
+            <Link to="/projecten">
               Projecten
-</NavLink>
-</li>
-<li>
-<NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact">
               Contact
-</NavLink>
-</li>
-</ul>
-</div>
-</nav>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <Outlet />
+    </>
   );
 }
