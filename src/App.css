@@ -1,157 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
- 
-:root {
-
-  --bg-left: #2193b0;
-
-  --bg-mid: #d5eef5;
-
-  --bg-right: #ffffff;
-
-  --brand: #2ea3c8;
-
-  --text: #222;
-
-  --muted: #4b5563;
-
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-
-  --radius: 18px;
-
-}
- 
-* { box-sizing: border-box; margin: 0; padding: 0; }
- 
 body {
-
   font-family: "Inter", sans-serif;
-
-  color: var(--text);
-
-  background: linear-gradient(90deg, var(--bg-left) 0%, var(--bg-mid) 35%, var(--bg-right) 65%);
-
+  background-image: linear-gradient(to right,#2193b0, #d5eef5, #ffffff);
   background-attachment: fixed;
-
+  font-size: 15px;
+  margin: 0%;
+  padding: 0%;
 }
- 
+
 .ProjectBody {
-
   width: min(1100px, 92%);
-
   margin: 0 auto;
+}
 
-}
- 
-.AboutBody{ 
-  margin-bottom: 1rem;
-  padding: 3rem;
-  font-size: larger;
-  
-}
- 
+
 /*navbar*/
 
 .navbar {
-
-    --bg-right: #ffffff;
-
-  --brand: #2ea3c8;
-
-  backdrop-filter: blur(10px);
-
-  box-shadow: var(--shadow);
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
   position: sticky;
-
-  top: 0;
-
-  z-index: 100;
-
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-container {
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   padding: 1rem 2rem;
-
 }
 
-.logoArda{
-
+.logoArda {
   font-weight: 800;
-
   background-color: #d9f3ff;
-
   padding: 0.5rem 1rem;
-
   border-radius: 12px;
-
   border: 1.5px solid black;
-
   box-shadow: 0 2px 0 #111;
-
   color: black;
-
   text-decoration: none;
 
 }
 
-.logoArda:hover{
-
-background-color:#2193b0;
-color: white;
+.logoArda:hover {
+  background-color: #2193b0;
+  color: white;
 }
 
 .nav-links {
-
   display: flex;
-
   gap: 1.5rem;
-
   list-style: none;
-
 }
 
 .nav-links a {
-
   text-decoration: none;
-
   color: #000;
-
   font-weight: 600;
-
   border-radius: 20px;
-
   padding: 0.4rem 0.8rem;
-
   border: 1.5px solid black;
-
   box-shadow: 0 2px 0 #111;
-
   background-color: #fff;
-
   transition: all 0.2s ease;
 
 }
 
-.nav-links a:hover,
+.nav-links a:hover{
+background-color: #2193b0;
+color: white;
+}
 
 .nav-links a.active {
-
   background-color: var(--brand);
-
   color: #fff;
-
 }
- 
+
 /*HomePagina*/
 
-.HomeBody{
+.HomeBody {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: absolute;
@@ -160,15 +86,20 @@ color: white;
   gap: 2rem;
 }
 
-.Hometext h1 {
+.Hometext{
 
-  font-size: 3rem;
+  font-size: 15px;
 
 }
 
-.H1Home{
-position: absolute;
-top: -40%;
+.PHome{
+  font-size: 18px;
+}
+
+.H1Home {
+  position: absolute;
+  top: -40%;
+  font-size: 60px;
 }
 
 
@@ -181,7 +112,7 @@ top: -40%;
   bottom: 45%;
 }
 
-.AfbeeldingCircle{
+.AfbeeldingCircle {
 
   width: 260px;
   height: 260px;
@@ -196,17 +127,17 @@ top: -40%;
   height: 100%;
   border-radius: 999px;
   object-fit: cover;
+}
 
+.SectionAfbeelding {
+  position: absolute;
+  left: 63.5%;
+  top: 44.5%;
 }
-.SectionAfbeelding{
-position: absolute; 
-left: 63.5%;
-top: 44.5%;
-}
- 
+
 /*buttons*/
 
-.btnVerstuur{
+.btnVerstuur {
   text-decoration: none;
   background-color: #d5eef5;
   color: black;
@@ -214,12 +145,12 @@ top: 44.5%;
   height: 30px;
 }
 
-.btnVerstuur:hover{
+.btnVerstuur:hover {
   background-color: #2193b0;
   color: white;
 }
 
-.BtnContact{
+.BtnContact {
   border: 2px solid #111;
   border-radius: 28px;
   color: #111;
@@ -231,129 +162,98 @@ top: 44.5%;
   text-decoration: none;
 }
 
-.BtnContact:hover{
-background-color:#2193b0;
-color: white;
-}
-
-.BtnProject:hover{
-  background-color: #ffffff;
-  cursor: pointer;
-  text-decoration: none;
-  color: #000;
-}
-
-
-.BtnProject{
-
-  border: 2px solid #111;
-  color: #111;
-
-  background: rgb(255, 255, 255);
-
-  border-radius: 28px;
-
-  padding: 0.7rem 1.1rem;
-
-  box-shadow: 0 2px 0 #111;
-
-  font-weight: 600;
-
-  cursor: pointer;
-
-  text-decoration: none;
-
-}
-
-.BtnProject{
-  background: var(--brand);
+.BtnContact:hover {
+  background-color: #2193b0;
   color: white;
-
 }
 
-.btn{
-text-decoration: none;
-background-color: #2193b0;
-color: white;
-border-style:ridge;
-border-radius: 30%;
-padding: 1%;
+.BtnProject:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.btn:hover{
-  transform: translateY(2px);
-  background-color: white;
-  color: #000;
-  
+
+.BtnProject {
+  color: #ffffff;
+  border: 2px solid #111;
+  background-color: #2193b0;
+  border-radius: 28px;
+  padding: 0.7rem 1.1rem;
+  box-shadow: 0 2px 0 #111;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
 }
- 
+
 /*Projects pagina*/
 
-.Projects{
+.Projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
   gap: 2rem;
   margin-top: 9rem;
 }
-.h1Project{
-position: absolute;  
-top: 15%;
+
+.h1Project {
+  position: absolute;
+  top: 15%;
 }
 
 
 .card {
-
-  background: white;
-  border-radius: var(--radius);
+  background-color: white;
+  border-radius: 10%;
+  padding: 0.5rem;
   box-shadow: var(--shadow);
   overflow: hidden;
   cursor: pointer;
-
 }
 
-.card:hover { transform: translateY(-4px); 
-   transition: transform 0.2s ease;
-   background-color: #2193b0;
-   color: white;
+.card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s ease;
+  background-color: #2193b0;
+  color: white;
 }
 
 .card img {
-
   width: 100%;
-
   height: 180px;
-
   object-fit: cover;
-
 }
 
 .card-content {
-
   padding: 1rem;
-
 }
- 
+
 /*AboutPagina*/
 
-.h1About{
+.AboutBody {
+  padding: 3rem;
+  font-size: larger;
+}
+
+.h1About {
   position: absolute;
   top: 28%;
 }
 
-.PAbout{
+.PAbout {
   position: absolute;
   top: 40%;
 }
 
-.VaardighedenSection{
-position: absolute;
-bottom: 25%;
+.VaardighedenSection {
+  position: absolute;
+  bottom: 25%;
 }
- 
+
 /*contactPagina*/
 
 .contact-info {
- margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 .contact-form {
@@ -373,17 +273,74 @@ bottom: 25%;
   font-family: inherit;
 
 }
- 
-.ContactBody{
+
+.ContactBody {
   width: 50%;
   position: absolute;
   left: 25%;
   bottom: 20%;
 }
 
-.h1Contact{
-position: absolute;
-top: -20%;
+.h1Contact {
+  position: absolute;
+  top: -20%;
 }
 
- 
+/*Project detail*/
+
+.ProjectDetailBody{
+margin-top: 60px;
+padding-left: 5%;
+}
+
+.ImageProjectDetail{
+width: 50%;
+gap: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+border-radius: 5%;
+}
+
+.ImageProjectDetail img {
+  width: calc(50% - 10px); /* Twee naast elkaar (50% - ruimte) */
+    height: auto;            /* Verhoudingen behouden */
+    object-fit: cover; 
+}
+
+.middel {
+  width: 100vw;
+  display: flex;
+}
+
+
+.DescriptionDetail{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color:#ffffff;
+  color: rgb(0, 0, 0);
+  border-style: ridge;
+  border-radius: 30%;
+  padding: 0.5%;
+  border: 1.5px solid black;
+  box-shadow: 0 2px 0 #111;
+  text-decoration: none;
+  position:absolute;
+  left: 1%;
+  top: 15%;
+  font-size: larger;
+}
+
+.btn:hover {
+  transform: translateY(2px);
+  background-color:#2193b0;
+  color: #ffffff;
+}
