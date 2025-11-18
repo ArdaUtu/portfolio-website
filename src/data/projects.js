@@ -26,10 +26,10 @@ export default [
     id: 3,
     title: "Platformer en raket spel in C#",
     description: "Een interactieve game gemaakt met HTML, CSS en JavaScript.",
-    descriptionId: "Ik heb een Unity-spel gemaakt met twee platformers. In het eerste spel beweeg je met WASD om obstakels te ontwijken en heb je een werkend healthbarsysteem. In het tweede spel moet je steeds op spatie drukken om te vliegen; daarbij verbruik je benzine. Je kunt benzine bijvullen door benzineobjecten te verzamele",
+    descriptionId: "Ik heb een Unity-spel gemaakt met twee platformers. In het eerste spel beweeg je met WASD om obstakels te ontwijken en heb je een werkend healthbarsysteem. In het tweede spel moet je steeds op spatie drukken om te vliegen; daarbij verbruik je benzine. Je kunt benzine bijvullen door benzineobjecten te verzamelen",
     image: '../images/UnityGame1.png',
     image1: '../images/UnityGame2.png',
     image2: '../images/UnityGame3.png',
     image3: '../images/UnityGame3.png',
-  },
+  }
 ];

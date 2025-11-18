@@ -25,7 +25,7 @@ export default function About() {
             <img src="../images/profile.jpg" alt="Arda" />
           </div>
         </div>
-        </section>
+      </section>
     </section>
   );
 }

@@ -9,16 +9,16 @@ export default function ProjectDetail() {
     <section className="ProjectDetailBody">
       <button className="btn" onClick={() => navigate('/projecten')}>Terug</button>
       <h1>{project.title}</h1>
-        <section className="middel">
-      <section className="ImageProjectDetail">
-        <img className="ImageProjectDetail" src={project.image} alt={project.title} />
-        <img className="ImageProjectDetail" src={project.image1} alt={project.title} />
-        <img className="ImageProjectDetail" src={project.image2} alt={project.title} />
-        <img className="ImageProjectDetail" src={project.image3} alt={project.title} />
-      </section>
-      <section className="DescriptionDetail">
-        <p className="DescriptionDetail">{project.descriptionId}</p>
-      </section>
+      <section className="middel">
+        <section className="ImageProjectDetail">
+          <img className="ImageProjectDetail" src={project.image} alt={project.title} />
+          <img className="ImageProjectDetail" src={project.image1} alt={project.title} />
+          <img className="ImageProjectDetail" src={project.image2} alt={project.title} />
+          <img className="ImageProjectDetail" src={project.image3} alt={project.title} />
+        </section>
+        <section className="DescriptionDetail">
+          <p className="DescriptionDetail">{project.descriptionId}</p>
+        </section>
       </section>
     </section>
 
