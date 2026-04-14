@@ -42,6 +42,8 @@ body {
 }
 
 .logoArda:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
   background-color: #2193b0;
   color: white;
 }
@@ -205,8 +207,6 @@ body {
 .card {
   background-color: white;
   border-radius: 10%;
-  padding: 0.5rem;
-  box-shadow: var(--shadow);
   overflow: hidden;
   cursor: pointer;
 }
@@ -294,13 +294,13 @@ body {
 }
 
 .ImageProjectDetail {
-  width: 50%;
+  width: 900px;
   gap: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 .ImageProjectDetail img {
@@ -325,6 +325,26 @@ body {
   font-size: 20px;
 }
 
+
+.ProjectLink{
+  display: inline-block;
+  position: absolute;
+  bottom: 20%;
+  padding: 10px 20px;
+  background-color: #2193b0;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.ProjectLink:hover {
+ transform: translateY(-7px);
+  transition: transform 0.2s ease;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+
 .btn {
   text-decoration: none;
   background-color: #ffffff;
@@ -345,4 +365,16 @@ body {
   transform: translateY(2px);
   background-color: #2193b0;
   color: #ffffff;
+}
+/*Zoekfilter*/
+
+.searchInput {
+  width: 350px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  margin-left: 350px;
+  margin-top: 5%;
 }

@@ -18,7 +18,7 @@ export default function Home() {
       </div>
       <div className="AfbeeldingHome">
         <div className="AfbeeldingCircle">
-          <img src="../images/profile.jpg" alt="Arda" />
+          <img src="./images/profile.jpg" alt="Arda" />
         </div>
       </div>
     </section>

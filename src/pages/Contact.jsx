@@ -6,9 +6,10 @@ export default function Contact() {
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("");
-
-    const formData = new FormData(event.target);
-    formData.append("access_key", "b4fd9a8f-25ef-4a58-bbde-beede017f712");
+    useEffect(() => {
+      const formData = new FormData(event.target);
+      formData.append("access_key", "b4fd9a8f-25ef-4a58-bbde-beede017f712");
+    }, []);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -20,14 +21,16 @@ export default function Contact() {
 
       if (data.success) {
         setResult("Je bericht is succesvol verzonden!");
-      } else {
+      } 
+      else {
         setResult("Er is iets misgegaan, probeer het opnieuw.");
       }
     } catch (error) {
       setResult("Er is een fout opgetreden, probeer het later nog eens.");
       console.error("Fout bij formulier:", error);
-    }
+    } 
   };
+
 
   return (
     <section className="ContactBody">
@@ -46,7 +49,7 @@ export default function Contact() {
         <button type="submit" className="btnVerstuur">Verstuur</button>
       </form>
 
-      {result && <p className="result-message">{result}</p>}
+      {<p className="result-message">{result}</p>}
     </section>
   );
 }

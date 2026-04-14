@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -10,15 +10,20 @@ import "./App.css";
 export default function App() {
   return (
     <div className="NavbarBody">
-      <Navbar />
+
       <div className="page">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projecten" element={<Projects />} />
-          <Route path="/projecten/:id" element={<ProjectDetail />} />
-          <Route path="/over-mij" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+
+        <BrowserRouter basename="/portfolio-website/">
+          <Routes>
+            <Route path="/" element={<Navbar />}>
+              <Route path="/" index element={<Home />} />
+              <Route path="/projecten" element={<Projects />} />
+              <Route path="/projecten/:id" element={<ProjectDetail />} />
+              <Route path="/over-mij" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );

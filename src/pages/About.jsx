@@ -4,8 +4,6 @@ export default function About() {
     <section className="AboutBody">
       <h1>Over mij</h1>
 
-      <h1 class="h1About">Hallo</h1>
-
       <p class="PAbout">
         Ik ben een gepassioneerde programmeur met een sterke interesse in programmeertalen zoals JavaScript,<br></br>
         Lua en HTML/CSS.Ik blijf mezelf continu uitdagen om mijn kennis te vergroten en nieuwe dingen te leren.
@@ -22,7 +20,7 @@ export default function About() {
       <section className="SectionAfbeelding">
         <div className="AfbeeldingHome">
           <div className="AfbeeldingCircle">
-            <img src="../images/profile.jpg" alt="Arda" />
+            <img src="./images/profile.jpg" alt="Arda" />
           </div>
         </div>
       </section>
